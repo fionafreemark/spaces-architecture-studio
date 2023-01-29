@@ -1,0 +1,1034 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* GLOBAL STYLINGS */
+* {
+    /* border: 1px solid violet; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #F4F3F0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    padding: 25px 10px 25px 0px;
+    line-height: 30px;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover, a:focus {
+    color: #B18f39;
+}
+
+/* GLOBAL STYLING ENDS HERE */
+/* HEADER BEGINS HERE*/
+
+header {
+    padding-top: 30px 0px;
+}
+
+.header-logo,
+.footer-logo {
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+    color: #b18f39;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.menu-label {
+    display:none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+header a, label {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.3s;
+}
+
+h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    margin: 10% auto;
+    max-width: 60%;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+
+.header-img-container {
+    position: relative;
+    margin: 30px 0;
+}
+
+.header-banner {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.best-studio-badge {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.best-studio-badge:hover {
+    transform: scale(1.1) translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 50%;
+}
+
+/* HEADER ENDS HERE*/
+/* SECTION 1 - PRACTICE - BEGINS HERE */
+
+.practice {
+    margin: 25px 0px;
+    min-height: 590px;
+}
+
+.practice-flexbox{
+    display: flex;
+    height: 590px;
+}
+
+h2 {
+    padding: 10px 0px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #B18F39;
+    margin-top: 15px;
+}
+
+.practice-container-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5%;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: #B18f39;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #B18f39;
+    outline: #B18f39;
+}
+
+button:active {
+    box-shadow: 10px 10px 10px #9C9B98;
+}
+
+.practice-container-right {
+    width: 50%;
+    position: relative;
+    min-width: 50%;
+}
+
+.kitchen-bottom-left {
+    position: absolute; 
+    max-height: 400px;
+    width: auto;
+    left:0;
+    bottom: 50px;
+    z-index: 2;
+    padding-left: 20px;
+    object-fit: cover;
+}
+
+.kitchen-top-right {
+    position: absolute;
+    max-height: 400px;
+    width: auto;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* SECTION 1 - PRACTICE - ENDS HERE */
+/* SECTION 2 - SPOTLIGHT - BEGINS HERE */
+
+section.spotlight {
+    margin: 50px 0px 100px;
+    height: 100%;
+}
+
+.spotlight-description {
+    max-width: 45%;
+}
+
+.spotlight-gallery ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.gallery-elouise,
+.gallery-grant {
+    /* Calculating the width of each item like this so there is even spacing between as a faux-margin */
+    width: calc(50% - 10px);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.gallery-basil,
+.gallery-jo,
+.gallery-rentea {
+    /* Calculating the width of each item like this so there is even spacing between as a faux-margin */
+    width: calc(33% - 10px);
+    position: relative;
+    margin-top: 10px;
+}
+
+.project-label {
+    font-size: 1.6rem;
+    display: inline-block;
+    position: absolute;
+    background-color: #FFF;
+    color: #000000;
+    padding: 15px 40px;
+    right: 0;
+    bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project-label:hover {
+    transform: scale(1.1);
+    background-color: #d8d8d8;
+}
+
+/* SECTION 2 - SPOTLIGHT - ENDS HERE */
+/* SECTION THREE - CONTACT FORM - BEGINS */
+
+section.contact{
+    background-image: url(./assets/image8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-form-flex {
+    /* flex box for h2, p, contact-form and button */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 80px 0;
+}
+
+.name-and-email-container {
+    /* flex box for name and email forms */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-form.name,
+.contact-form.email,
+.contact-form.message {
+    /* flexed so the labels sit in a column on top of their related input box */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.contact-form.name {
+    width: 45%;
+    padding-right: 15px;
+}
+
+.contact-form.email {
+    width: 55%;
+}
+
+.contact-form.message {
+    padding-bottom: 40px;
+}
+
+section.contact h2,
+section.contact p {
+    width: 70%;
+}
+
+section.contact label {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif; 
+    padding-bottom: 10px;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif; 
+    border: 1px solid #B18F39;
+    padding: 15px 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+section.contact button {
+    align-self: flex-start;
+}
+
+/* SECTION FOUR - CONTACT FORM - ENDS HERE */
+/* SECTION FIVE - TESTIMONIALS - STARTS */
+
+section.testimonials {  
+    padding: 75px 0;
+}
+
+.testimonials-flex-container {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.vertical-bar-detail {
+    border-left: 3px solid #B18F39;
+    margin: 20px 20px 20px 0px;
+}
+
+.testimonials-founder-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonials-founder-title-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* I wasn't sure if there was a way to make this a link as an ::after, because it looks like it probably should be. */
+.testimonials-founder-flex::after {
+    content: url(./assets/arrow.svg);
+    padding-left: 30%;
+}
+
+.testimonial-text {
+    width: 75%;
+    padding: 30px;
+    font-size: 2.6rem;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+.founder-portrait {
+    max-width: 130px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.jaime-jorge, 
+.founder-title {
+    padding: 0;
+}
+
+.jaime-jorge {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+p.founder-title {
+    font-size: 1.6rem;
+    padding-top: 5px;
+}
+
+.rentea {
+    text-transform: uppercase;
+}
+
+.arrow {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 80px;
+    right: 270px;
+}
+
+/* SECTION FOUR - TESTIMONIALS - ENDS */
+/* SECTION FIVE - BANNER IMAGE - BEGINS */
+
+section.office-banner img {
+    padding-bottom: 75px;
+}
+
+/* SECTION 5 - BANNER IMAGE - ENDS */
+/* SECTION 6 - FOOTER - BEGINS */
+
+/* general flex styling for all footer containers begins */
+.footer-flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.contact-container {
+    width:60%;
+}
+
+.footer-menu {
+    width: 40%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+footer ul li ul li {
+    padding: 0;
+}
+/* flexbox styling for all footer containers ends */
+/* styling for contact-container begins */
+
+footer p {
+    padding: 0;
+}
+
+footer p:nth-child(2) {
+    padding-top: 30px;
+}
+footer p:nth-child(4) {
+    padding: 20px 0;
+}
+
+footer p:nth-child(5) {
+    padding: 0 0 40px 0;
+}
+/* styling for contact-container ends */
+/* styling for footer-menu starts*/
+
+p.footer-categories {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-menu-links {
+    color: #000000;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.footer-logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* styling for footer-menu ends */
+/* styling for juno footer begins */
+
+.divider-line {
+    border-top: 1px solid #9C9B98;
+}
+
+.juno::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #9C9B98;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.juno-link {
+    text-decoration: none;
+}
+
+.juno {
+    color: #9C9B98;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    padding: 0;
+    transition: 0.3s;
+    display: block;
+}
+
+.juno:hover {
+    color: #000000;
+}
+/* styling for juno footer ends */
+/* SECTION 6 - FOOTER - ENDS */
+
+/* ~~~~~MEDIA QUERIES~~~~~*/
+
+/* MEDIA QUERY <940PX BEGINS */
+
+@media (max-width:940px) {
+    /* header styling begins */
+    .header-logo {
+        font-size: 2.6rem;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        max-width: 80%;
+    }
+
+    .header-banner {
+        max-height: 400px;
+    }
+
+    .main-nav {
+        width: 50%;
+    }
+
+    /* practice styling begins */
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .kitchen-bottom-left, 
+    .kitchen-top-right {
+        max-height: 350px;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    /* spotlight styling begins */ 
+    .spotlight-description {
+        max-width: 60%;
+    }
+
+    .project-label {
+        font-size: 1.3rem;
+    }
+
+    /* contact styling begins */
+    .name-and-email-container {
+        flex-direction: column;
+    }
+
+    .contact-form.name, 
+    .contact-form.email {
+        width: 80%;
+    }
+
+    .contact-form.name {
+        padding-right: 0;
+    }
+
+    section.contact p {
+        width: 100%;
+    }
+
+    /* testimonials styling begins */
+    .testimonial-text {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    /* footer styling begins */
+    .contact-container {
+        width: 40%;
+    }
+    
+    .footer-menu {
+        width: 60%;
+    }
+}
+
+/* MEDIA QUERY <768PX BEGINS */
+
+@media (max-width: 768px) {
+    /* global styling begins*/
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .header-banner {
+        max-height: 300px;
+    }
+
+    p {
+        line-height: 25px;
+        font-size: 1.5rem;
+    }
+
+    /* header styling begins */
+    nav {
+        position: relative;
+    }
+
+    .menu-label {
+        display:block;
+        padding: 10px 2px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+
+    .main-nav-links {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0;
+        padding: 10px 0;
+        align-self:flex-end
+    }
+    
+    .main-nav{
+        position: absolute;
+        width: auto;
+        top: 50px;
+        right: 0;
+        background-color: #f4f3f0;
+        opacity: 90%;
+        transition: 0.3s;
+        display: none;
+    }
+
+    input[type="checkbox"]:checked + .main-nav{
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        max-width: 85%;
+    }
+
+    .best-studio-badge {
+        max-width: 25%;
+    }
+
+    label, 
+    .main-nav-links {
+        font-size: 1.6rem;
+    }
+
+    /* practice styling begins */
+
+    .practice-flexbox {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .practice-container-right {
+        width: 100%;
+        height: 600px;
+    }
+
+    .practice-container-left {
+        width: 100%;
+    } 
+
+    button {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .kitchen-bottom-left, 
+    .kitchen-top-right {
+        max-height: 400px;
+        padding: 0;
+    }
+
+    /* spotlight styling begins*/
+
+    .spotlight-description {
+        max-width: 80%;
+    }
+    .spotlight-gallery ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .gallery-elouise, 
+    .gallery-grant, 
+    .gallery-basil, 
+    .gallery-jo, 
+    .gallery-rentea {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .project-label {
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        padding: 13px;
+    }
+
+    section.spotlight img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    /* contact styling begins */
+
+    section.contact h2, 
+    section.contact p {
+        width: 100%;
+    }
+
+    .contact-form-flex {
+        width: 100%;
+    }
+
+    .contact-form.name, .contact-form.email {
+        width: 100%;
+    }
+
+    section.contact label {
+        font-size: 1.5rem;
+    }
+
+    /* testimonials styling begins */
+
+    .testimonial-text {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .vertical-bar-detail {
+        border-left: 3px solid #B18F39;
+        margin: 10px 10px 0px 0px;
+    }
+    
+    .testimonials-founder-flex {
+        flex-wrap: wrap;
+    }
+    
+    .testimonials-founder-flex::after {
+        padding-left: 50%;
+    }
+
+    .founder-portrait {
+        max-width: 100px;
+        margin: 20px 20px 20px 10px;
+    }
+
+    .testimonials-founder-title-flex {
+        width: 50%;
+    }
+
+    p.jaime-jorge  {
+        font-size: 1.8rem;
+    }
+
+    p.founder-title {
+        font-size: 1.6rem;
+    }
+
+    /* office banner img begins */
+    section.office-banner img {
+        object-fit: cover;
+        min-height: 300px;
+    }
+    
+    /* footer styling begins */
+    .footer-flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .footer-logo {
+        font-size: 2.5rem;
+    }
+    
+    footer p {
+        font-size: 1.6rem;
+    }
+
+    .footer-menu::before{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #9C9B98;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    .footer-menu {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    footer ul li ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    p.footer-categories {
+        font-size: 1.8rem;
+    }
+
+    .footer-menu-links {
+        font-size: 1.6rem;
+        margin-right: 20px
+    }
+
+    .juno-footer-container {
+        text-align: center;
+    }
+
+    footer ul li ul {
+        padding: 10px 0;
+    }
+
+    .juno {
+        margin-top: 0px;
+    }
+}
+
+/* MEDIA QUERY FOR <480PX BEGINS */
+
+@media (max-width:480px) {
+    /* global styling begins */
+    h2 {
+        font-size: 2rem;
+    }
+
+    section.spotlight,
+    .contact-form-flex,
+    section.testimonials {
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    /* header styling begins */
+    .header-logo {
+        font-size: 2rem;
+    }
+
+    label, .main-nav-links {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .header-banner {
+        max-height: 250px;
+    }
+
+    .best-studio-badge {
+        min-width: 40px;
+    }
+
+    /* practice styling begins */
+    .practice {
+        margin-bottom: 0;
+    }
+    .practice-container-right {
+        height: 350px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .kitchen-bottom-left, 
+    .kitchen-top-right {
+        max-height: 250px;
+        padding: 0;
+    }
+
+    .kitchen-bottom-left {
+        bottom: 0;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .practice button {
+        align-self: stretch;
+    }
+
+    /* spotlight styling begins */
+    .spotlight-description {
+        max-width: 100%;
+    }
+    
+    section.spotlight img{
+        max-height: 180px;
+    }
+
+    /* contact styling begins */
+    section.contact p {
+        width: 100%;
+    }
+
+    section.contact label {
+        font-size: 1.3rem;
+    }
+    
+    textarea {
+        height: 175px;
+    }
+
+    section.contact button {
+        align-self: stretch;
+    }
+
+       /* testimonials styling begins */
+    .testimonial-text {
+        font-size: 1.6rem;
+        letter-spacing: 1.2px;
+    }
+
+    .testimonials-founder-flex::after {
+        padding-left: 55%;
+    }
+
+    .founder-portrait {
+        max-width: 90px;
+        margin: 10px;
+    }
+
+    .testimonials-founder-title-flex {
+        width: 50%;
+    }
+
+    p.jaime-jorge  {
+        font-size: 1.6rem;
+    }
+
+    p.founder-title {
+        font-size: 1.4rem;
+    }
+
+    /* office banner img begins */
+    section.office-banner img {
+        object-fit: cover;
+        min-height: 225px;
+    }
+
+    /* footer styling begins */
+    p.footer-categories {
+        font-size: 1.7rem;
+    }
+
+    .footer-menu-links {
+        font-size: 1.5rem;
+    }
+}
+
+/* MEDIA QUERIES END */
+

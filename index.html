@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaces Architecture Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- HEADER BEGINS HERE -->
+<header>
+    <div class="wrapper">
+        <nav>
+            <a href="#" title="Spaces Studio"><p class="header-logo">Spaces</p></a>
+            <label for="menu" class="menu-label">Menu</label>
+            <input type="checkbox" id="menu" name="menu">
+            <ul class="main-nav">
+                <li><a href="#about" class="main-nav-links">About</a></li>
+                <li><a href="#" class="main-nav-links">Services</a></li>
+                <li><a href="#spotlight" class="main-nav-links">Projects</a></li>
+                <li><a href="#contact-link" class="main-nav-links">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Spaces is an architecture studio based in Toronto, Canada</h1>
+        <div class="header-img-container">
+            <img src="./assets/header.jpg" alt="Photograph of a residential interior scene with a modern living room that opens up to a covered porch. The room is styled with simple, modern decor and wood accents. There is sunshine streaming in through the porch and windows." class="header-banner">
+            <div class="best-studio-badge">
+                <a href="#" title="Discover why we won best studio of the year."><img src="./assets/badge.png" alt="Badge that reads: best studio of the year" ></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER ENDS HERE -->
+<main>
+    <!-- SECTION ONE - PRACTICE - BEGINS -->
+    <section class="practice">
+        <div class="wrapper">
+            <div class="practice-flexbox">
+                <div class="practice-container-left">
+                    <h2 id="about">Our Practice</h2>
+                    <p class="practice-text">Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms. Energy healing pendulum meditate divination practitioner candles chanting massage Buddha. Diving Light Worker herbalist, lavender love compassion practitioner pedulum massage fibonacci sage. Dance peace angels awakening. Love Flower of Life tarot shamantic. Quartz spirit guides divination peace, herbalist chakra clearing full moon shaman.</p>
+                    <button>Send Message</button>
+                </div>
+                <div class="practice-container-right">
+                    <img class="kitchen-bottom-left" src="./assets/image1.jpg" alt="Photo of modern kitchen interior looking over island counter with a peek into the dining room. Two black pendant lamps hang over the white counter and there are three oak stools under the ledge">
+                    <img class="kitchen-top-right" src="./assets/image2.jpg" alt="Alternate view of modern kitchen interior looking over island counter toward sink. Three black pendant lamps hang over the white counter and there are three oak stools under the ledge">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION ONE - PRACTICE - ENDS -->
+    <!-- SECTION TWO - SPOTLIGHT - BEGINS -->
+    <section class="spotlight">
+        <div class="wrapper">
+            <h2 id="spotlight">Spotlight</h2>
+            <p class="spotlight-description">Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms.</p>
+            <div class="spotlight-gallery">
+                <ul>
+                    <li class="gallery-elouise">
+                        <img src="./assets/image3.jpg" alt="Modern kitchen with white surfaces and black fixtures.Looking over the island counter towards the backsplash of the far wall.">
+                        <a href="#"><h3 class="project-label">Elouise Avenue</h3></a>
+                    </li>
+                    <li class="gallery-grant">
+                        <img src="./assets/image4.jpg" alt="Exterior of modern house with angular features and wood finishes, contrasted with black window frames and feature walls. There is a persons walking their dog in front of a large set of double-stacked windows.">
+                        <a href="#"><h3 class="project-label">Grant Residence</h3></a>
+                    </li>
+                    <li class="gallery-basil">
+                        <img src="./assets/image5.jpg" alt="Photo of interior dining room with light, slatted, wood tables and benches and black cone-shaped light fixtures hanging from above.">
+                        <a href="#"><h3 class="project-label">Basil Lab</h3></a>
+                    </li>
+                    <li class="gallery-jo">
+                        <img src="./assets/image6.jpg" alt="Interior of residential building, looking over a circular dining table towards a wooden staircase. The scene is rather dark except for light shining down the staircase. There is a light fixture suspended over the dining table made up of 6 glass spheres.">
+                        <a href="#"><h3 class="project-label">Jo Residence</h3></a>
+                    </li>
+                    <li class="gallery-rentea">
+                        <img src="./assets/image7.jpg" alt="Modern restaurant patio with white cement walls and round dining tables that have small square stool seats on each side. There is a tree in the back left corner where the ceiling opens up to the sky, as well as some potted plants on the ground nearby.">
+                        <a href="#"><h3 class="project-label">Rentea</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION TWO - SPOTLIGHT - ENDS -->
+
+    <!-- SECTION THREE - CONTACT FORM - BEGINS -->
+    <section class="contact">
+        <div class="wrapper">
+            <div class="contact-form-flex"> 
+                <h2 id="contact-link">Tell us about your ideas</h2>
+                <p class="contact-text">Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage charms.</p>
+                <div class="contact-form">
+                    <div class="name-and-email-container">
+                        <!-- name form -->
+                        <form action="#" name="name" class="contact-form name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </form>
+                        <!-- email form -->
+                        <form action="#" name="email" class="contact-form email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </form>
+                    </div>
+                    <!-- message form -->
+                    <form action="#" name="message" class="contact-form message">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="mesage" rows="10" maxlength="500" minlength="2"></textarea>
+                    </form>
+                </div>
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION THREE - CONTACT FORM - ENDS -->
+
+    <!-- SECTION FOUR - TESTIMONIALS - BEGINS -->
+    <section class="testimonials">
+        <div class="wrapper">
+            <h2>Words from our clients</h2>
+                <div class="testimonials-flex-container">
+                    <div class="vertical-bar-detail"></div>
+                    <div class="testimonials-flex">
+                        <p class="testimonial-text"> Spaces were an incredible team of passionate creatives, who truly transformed our space into a beautiful sanctuary.</p>
+                        <div class="testimonials-founder-flex">
+                            <img src="./assets/image10.jpg" alt="Portrait photo of founder Jaime Jorge standing in front of a brick wall, smiling and looking to the left." class="founder-portrait">
+                            <div class="testimonials-founder-title-flex">
+                                <p class="jaime-jorge">Jaime Jorge</p>
+                                <p class="founder-title">Founder, <span class="rentea">Rentea</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- SECTION FOUR - TESTIMONIALS - ENDS -->
+
+    <!-- SECTION FIVE - BANNER IMAGE - BEGINS -->
+    <section class="office-banner">
+        <div class="wrapper">
+            <img src="./assets/image9.jpg" alt="Photo of office lounge interior. There are light wood walls with a row of windows looking into the hallway, and low bookshelves on perimeter of the room. There are green and white upholstered bucket chairs and a modular sofa in the corner.">
+        </div>
+    </section>
+    <!-- SECTION FIVE - BANNER IMAGE - ENDS -->
+
+    <!-- SECTION SIX - FOOTER - BEGINS -->
+    <footer>
+        <!-- WRAPPER BEGINS -->
+        <div class="wrapper">
+            <div class="footer-flex-container">
+                <!-- FOOTER CONTACT CONTAINER BEGINS -->
+                <div class="contact-container">
+                    <a href="#" title="Spaces Studio" class="footer-logo"><p class="footer-logo">Spaces</p></a>
+                    <p>129 Jordan Ave, </p>
+                    <p>Toronto, CA M222 324</p>
+                    <p>(232) - 222 - 2522</p>
+                    <p>info@spaces-studio.com</p>
+                </div>
+                <!-- FOOTER CONTACT CONTAINER ENDS -->
+                <!-- FOOTER MENU BEGINS -->
+                <div class="footer-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <p class="footer-categories">Menu</p>
+                                <!-- MENU sublist begins -->
+                                <ul>
+                                    <li><a href="" class="footer-menu-links">Services</a></li>
+                                    <li><a href="" class="footer-menu-links">Who We Are</a></li>
+                                    <li><a href="" class="footer-menu-links">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="footer-categories">Projects</p>
+                                <!-- PROJECTS sublist begins -->
+                                <ul>
+                                    <li><a href="" class="footer-menu-links">Residential</a></li>
+                                    <li><a href="" class="footer-menu-links">Commercial</a></li>
+                                    <li><a href="" class="footer-menu-links">Conceptual</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="footer-categories">Follow</p>
+                                <!-- FOLLOW sublist begins -->
+                                <ul>
+                                    <li><a href="" class="footer-menu-links">Instagram</a></li>
+                                    <li><a href="" class="footer-menu-links">Youtube</a></li>
+                                    <li><a href="" class="footer-menu-links">Houzz</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                <!-- FOOTER MENU ENDS -->
+                <!-- JUNO FOOTER BEGINS -->
+                <div class="juno-footer-container">
+                    <a href="https://www.junocollege.com/" class="juno-link"><p class="juno">Created at Juno College of Technology</p></a>
+                </div>
+                    <!-- JUNO FOOTER ENDS -->
+            </div>
+            <!-- WRAPPER ENDS HERE -->
+    </footer>
+    <!-- SECTION SIX - FOOTER- ENDS --> 
+</main>
+</body>
+</html>
